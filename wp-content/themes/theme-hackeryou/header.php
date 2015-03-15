@@ -18,20 +18,21 @@
 
 <header>
   <div class="headerContainer">
+    <div class="topBar">
+      
+        <a class="logo" href="<?php echo home_url( '/' ); ?>" title=" <?php bloginfo( 'name', 'display' ); ?>" rel="home">
+          <?php bloginfo( 'name' ); ?>
+        </a>
+
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_locations' => 'primary'
+      )); ?>
+    </div> <!-- end topBar -->
     <?php $image =  get_field('header_image',18); ?>
     <img class="headerImage" src="<?= $image['url']?>" alt="">
 
-    <h1>
-      <a class="logo" href="<?php echo home_url( '/' ); ?>" title=" <?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>
-
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'primary'
-    )); ?>
-
+  
 
 
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
