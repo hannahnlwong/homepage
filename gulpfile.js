@@ -1,6 +1,7 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+var gulp = require('gulp'),
+	sass = require('gulp-sass');
 
+gulp.task('default', ['styles', 'watch']);
 //here we define the list of things to happen when we run gulp styles
 gulp.task('styles',function() {
 	gulp.src('wp-content/themes/theme-hackeryou/style.scss')

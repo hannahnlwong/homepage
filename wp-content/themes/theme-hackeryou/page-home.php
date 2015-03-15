@@ -35,7 +35,7 @@
         <i class="fa fa-laptop"></i>
         <i class="fa fa-tablet"></i>
         <i class="fa fa-mobile"></i>
-        <h3 class="respTitle">Responsive Design</h3>
+        <h3 class="respTitle">Responsive Design  testing</h3>
         <p class="respText">Responsive design ... Chocolate cheesecake sweet sweet roll soufflé cake I love. Macaroon I love macaroon cotton candy. Tart pie soufflé sugar plum sesame snaps. Brownie halvah I love I love dragée. </p>
       </div> <!-- end respBlock -->
 
